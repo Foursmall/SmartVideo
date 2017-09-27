@@ -1,0 +1,48 @@
+.data-panel {
+    background-color: #fbfdfc;
+    height:100%;
+    color: #8aa4af;
+}
+.data-panel tr {
+    height: 40px;;
+}
+.data-panel table {
+    display: table;
+    border-collapse:separate;
+    border-spacing: 10px;
+}
+.data-panel progress{
+    height: 15px;
+}
+.data-panel ul li a {
+    color: #ffFFFF;
+}
+
+.data-panel-header {
+    padding: 10px 0;
+}
+.data-panel-body {
+    padding: 10px;
+}
+
+.panel-name {
+    width: 30%;
+}
+
+.data-panel-footer {
+    border-top: 1px solid #f4f4f4;
+}
+.panel-num {
+    border-radius: 8px;
+    width: 25px;
+    background-color: #91c7ae;
+    display: inline-block;
+    text-align: center;
+    color: #ffFFFF;
+}
+.pro{
+  border-radius: 0px;
+    background-color: #06c6a7;
+    padding-right: 10px;
+    margin: auto;
+}

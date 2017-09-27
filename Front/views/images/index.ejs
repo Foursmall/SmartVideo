@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/image_style.css' />
+</head>
+<body>
+<h1>Images</h1>
+<p>Express stock photo application.</p>
+<div id="images">
+    <% images.forEach(function(image) { %>
+    <div class="image">
+        <h2><%=image.name%></h2>
+        <a href='/photo/<%=image.id%>/download'>
+            <img src='/image_db/<%=image.path%>'/>
+        </a>
+    </div>
+    <% }) %>
+</div>
+</body>
+</html>

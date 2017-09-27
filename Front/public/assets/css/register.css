@@ -1,0 +1,171 @@
+.register {
+    background: #f4f4f4;
+    top:0;
+    bottom:0;
+    height: 100%;
+}
+.register a {
+    text-decoration: none;
+    text-emphasis:none;
+
+}
+
+.register .register-container{
+    width: 100%;
+    padding-bottom: 5rem;
+    position: relative;
+    z-index: 3;
+    text-align: center;
+}
+
+.register .register-container .register-container-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 8%;
+}
+
+.register .register-container .register-container-header h4 {
+    color: rgb(102,102,102);
+    font-family:'lucida grande', 'lucida sans unicode', lucida, helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 22px;
+    text-size-adjust:100%;
+    -webkit-font-smoothing: antialiased;
+    -webkit-margin-after: 36px;
+    -webkit-margin-before: 10px;
+}
+
+.register .register-container .register-container-header h1 {
+    color: rgb(102,102,102);
+    font-family:'lucida grande', 'lucida sans unicode', lucida, helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 22px;
+    text-size-adjust:100%;
+    -webkit-font-smoothing: antialiased;
+    -webkit-margin-after: 36px;
+    -webkit-margin-before: 10px;
+}
+
+.register .register-container .register-container-header p{
+    color: rgb(102,102,102);
+    font-family:'lucida grande', 'lucida sans unicode', lucida, helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 21.6px;
+    vertical-align: baseline;
+    text-size-adjust:100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+.register .register-container .register-container-form {
+    width: 250px;
+    margin: 30px auto;
+    padding-bottom: 20px;
+    display: inline;
+}
+.register .register-container .register-container-form .register-container-form-input {
+    /*display: inline;*/
+    position: relative;
+    z-index: 1;
+    max-width: 300px;
+    width: 240px;
+    vertical-align: top;
+    font-size: 1.5rem;
+    margin: auto;
+}
+
+.register .register-container .register-container-form .register-container-form-input input {
+    width: 250px;
+    height: 40px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    background-color: #f4f4f4;
+    border: 1px hidden rgb(182,199,206);
+    border-bottom-style: solid;
+    color: #b6c7ce;
+    text-align: center;
+    font-family: 'lucida grande', 'lucida sans unicode', lucida, helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
+    outline:none;
+    border-bottom-color: rgb(182,199,206);
+
+}
+.register .footer {
+    bottom: 0;
+    padding: 15px;
+    position: fixed;
+    width:100%;
+}
+.register .footer .foot {
+    text-align: center;
+}
+.register .footer .foot ul li{
+    display: inline;
+    padding: 20px;
+}
+.register .footer .foot ul li a{
+    color: #999;
+    text-decoration: none;
+}
+.register .footer .foot p{
+    font-size: 14px;
+    color: rgba(0,0,0,.2);
+}
+
+
+.register .register-container .register-container-form .register-container-form-input .btn {
+    height: 40px;
+    background-color: #6166D4;
+    border-color: #6166D4;
+    border-radius: 2px;
+    padding: .795rem 1.5rem;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #fff;
+    font-family:'lucida grande', 'lucida sans unicode', lucida, helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
+    font-weight: 400;
+    vertical-align: baseline;
+    text-size-adjust:100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+.register .register-container .register-container-foot {
+    width: 300px;
+    margin:auto;
+}
+
+.register .register-container .register-container-foot p {
+    display: inline;
+}
+.register .register-container .register-container-foot p a{
+    text-align: center;
+    text-decoration: none;
+    font-family: 'lucida grande', 'lucida sans unicode', lucida, helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
+    color: #666;
+    font-weight: 400;
+    vertical-align: baseline;
+    text-size-adjust:100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+.resgister-container-form-input p {
+    color: #f4635e;
+}
+
+.code{
+    background:url(../../images/code/code_1.jpg);
+    font-family:Arial;
+    font-style:italic;
+    color: #6166d4;;
+    font-size:30px;
+    border:0;
+    width: 145px;
+    padding:2px 3px;
+    letter-spacing:3px;
+    font-weight:400;
+    float:left;
+    cursor:pointer;
+    text-align:center;
+    vertical-align:middle;
+}

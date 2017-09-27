@@ -1,0 +1,37 @@
+<!--//extends layout-->
+<!--//-->
+<!--//block content-->
+<!--//  h1= title-->
+<!--//  p Welcome to #{title}-->
+<!DOCTYPE html >
+<html ng-app="App">
+<head>
+    <title>angularjs模块 控制器</title>
+    <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+    <script>
+        var app = angular.module('App', []);
+
+        app.controller('ctrl', ['$scope', '$http', function ($scope, $http) {
+            $scope.user = {username: '', password: ''};
+            $scope.submit = function () {
+                $http({method: 'POST', url: 'http://10.108.103.117:3000/user/login', data: $scope.user})
+                        .then(function suc(response) {
+                            console.log(response.data);
+                        })
+            }
+        }])
+    </script>
+</head>
+<body>
+<div ng-controller="ctrl">
+    <input type="text" ng-model="user.username">
+    {{user.username}}
+    <input type="password" ng-model="user.password">
+    <button ng-click="submit()">button</button>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;" ng-app="App">
+<head>
+    <meta charset="UTF-8">
+    <title>智视科技有限公司</title>
+    <link rel="stylesheet" href="assets/css/amazeui.css" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/register.css">
+</head>
+<body style="height: 100%;" ng-controller="resetAccount">
+<div style="width: 100%;height: 100%;">
+    <div class="register">
+        <div class="nav-contain" style="box-shadow:none">
+            <div class="nav-inner" >
+                <ul class="am-nav am-nav-pills am-nav-justify">
+                    <li class="pull-left"><a href="http://www.smartvideo.tech:3000" ><img src="logo_bar.png" alt="智视科技" style="width: 200px"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="register-container" ng-show="!reset_sended">
+            <div class="register-container-header" style="margin-top: 12%">
+                <h4>重置密码</h4>
+            </div>
+            <div class="register-container-form">
+                <div class="register-container-form-input"  >
+                    <input type="password" placeholder="密码" ng-click="cancel_error()" ng-model="password">
+                    <input type="password" placeholder="密码确认" ng-click="cancel_error()" ng-model="pwd_confirm">
+                    <button ng-show="!reset_error" type="" class="btn" ng-click="reset_submit()" style="margin-top: 5%">发送验证邮件</button>
+                    <button ng-show="reset_error" type="" class="btn" disabled="disabled" style="margin-top: 5%">{{error_content}}</button>
+                </div>
+                <br>
+            </div>
+        </div>
+        <div class="register-container" ng-show="reset_sended">
+            <div class="register-container-header" style="margin-top: 15%;">
+                <h1>重置成功!</h1>
+                <p><a href="http://www.smartvideo.tech:3000">{{left_time}}s后跳转smartVideo主页</a></p>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="foot">
+                <ul>
+                    <li><a href="">关于我们</a></li>
+                    <li><a href="">开发文档</a></li>
+                    <li><a href="">隐私政策</a></li>
+                    <li><a href="">内容版权</a></li>
+                    <li><a href="">联系我们</a></li>
+                    <li><a href="">FAQ</a></li>
+                </ul>
+                <p>京ICP证xxxxxx号</p>
+            </div>
+        </footer>
+    </div>
+</div>
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/bootstrap.js"></script>
+<script src="js/lib/angular.js"></script>
+<script src="js/resetAccount.js"></script>
+</body>
+</html>
