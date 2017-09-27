@@ -1,0 +1,20 @@
+{
+  "name": "Iva-Server",
+  "version": "0.0.1" ,
+  "description": "Iva Server ,one private project by bupt foursmall  "  ,
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "mongodb":"latest",
+    "mongoose":"latest",
+    "yuidocjs" :"latest",
+    "express":"latest",
+    "nodeunit":"latest",
+    "body-parser":"latest",
+    "cookie-parser":"latest",
+    "cookie-session":"latest",
+    "express-session":"latest"
+  }
+}
